@@ -1,0 +1,154 @@
+{
+  "algorithm": "A* Search",
+  "heuristic": "admissible NN-tour + Manhattan exit distance",
+  "config": {
+    "r2_real_scrolls": [
+      2,
+      7,
+      9,
+      11
+    ],
+    "fake_scroll": 5,
+    "r1_scrolls": [
+      1,
+      3,
+      10
+    ]
+  },
+  "results_by_entry": {
+    "1": {
+      "success": true,
+      "cost": 12,
+      "nodes_expanded": 13,
+      "nodes_generated": 39,
+      "path_steps": 13
+    },
+    "2": {
+      "success": true,
+      "cost": 11,
+      "nodes_expanded": 12,
+      "nodes_generated": 37,
+      "path_steps": 12
+    },
+    "3": {
+      "success": true,
+      "cost": 12,
+      "nodes_expanded": 13,
+      "nodes_generated": 39,
+      "path_steps": 13
+    }
+  },
+  "optimal_entry": 2,
+  "optimal_cost": 11,
+  "optimal_path_steps": 12,
+  "optimal_path": [
+    {
+      "step": "0",
+      "block": "2",
+      "action": "START",
+      "g": "0",
+      "h": "12",
+      "f": "12",
+      "note": "Entry block 2"
+    },
+    {
+      "step": "1",
+      "block": "2",
+      "action": "COLLECT @ 2",
+      "g": "1",
+      "h": "11",
+      "f": "12",
+      "note": "Collect scroll at block 2"
+    },
+    {
+      "step": "2",
+      "block": "1",
+      "action": "MOVE \u2192 1",
+      "g": "2",
+      "h": "9",
+      "f": "11",
+      "note": "Move \u2192 1  (R1 scroll block \u2014 avoid collecting)"
+    },
+    {
+      "step": "3",
+      "block": "4",
+      "action": "MOVE \u2192 4",
+      "g": "3",
+      "h": "8",
+      "f": "11",
+      "note": "Move \u2192 4"
+    },
+    {
+      "step": "4",
+      "block": "7",
+      "action": "MOVE \u2192 7",
+      "g": "4",
+      "h": "7",
+      "f": "11",
+      "note": "Move \u2192 7"
+    },
+    {
+      "step": "5",
+      "block": "7",
+      "action": "COLLECT @ 7",
+      "g": "5",
+      "h": "6",
+      "f": "11",
+      "note": "Collect scroll at block 7"
+    },
+    {
+      "step": "6",
+      "block": "8",
+      "action": "MOVE \u2192 8",
+      "g": "6",
+      "h": "5",
+      "f": "11",
+      "note": "Move \u2192 8"
+    },
+    {
+      "step": "7",
+      "block": "9",
+      "action": "MOVE \u2192 9",
+      "g": "7",
+      "h": "4",
+      "f": "11",
+      "note": "Move \u2192 9"
+    },
+    {
+      "step": "8",
+      "block": "9",
+      "action": "COLLECT @ 9",
+      "g": "8",
+      "h": "3",
+      "f": "11",
+      "note": "Collect scroll at block 9"
+    },
+    {
+      "step": "9",
+      "block": "12",
+      "action": "MOVE \u2192 12",
+      "g": "9",
+      "h": "2",
+      "f": "11",
+      "note": "Move \u2192 12"
+    },
+    {
+      "step": "10",
+      "block": "11",
+      "action": "MOVE \u2192 11",
+      "g": "10",
+      "h": "1",
+      "f": "11",
+      "note": "Move \u2192 11"
+    },
+    {
+      "step": "11",
+      "block": "11",
+      "action": "COLLECT @ 11",
+      "g": "11",
+      "h": "0",
+      "f": "11",
+      "note": "Collect scroll at block 11  <- ALL scrolls collected!"
+    }
+  ]
+}
